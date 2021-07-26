@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+:root {
+    --white: hsl(0, 0%, 100%);
+    --cyan: #18d4ce;
+    --red: #ed2651;
+    --title: #3d3d3d;
+    --text: #4f4f4f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid green; */
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+}
+
+.container {
+    width: 90%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.page-error {
+    margin-left: 25px;
+}
+
+header {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header-container {
+    padding: 25px 25px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 1.5em;
+    color: var(--title);
+    margin: 35px 0;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.largeText span {
+    margin-top: 0px;
+    font-weight: 700;
+    font-size: 35px;
+    width: 586px;
+    height: 190px;
+}
+
+.img-container {
+    max-width: 500px;
+    display: flex;
+}
+
+.img-container img {
+    width: 90%;
+    /* max-width: 900px; */
+    height: 340px;
+    /* margin-right: 900px; */
+}
+
+article.page-intro {
+    max-width: 700px;
+    /* position: relative; */
+    top: 35px;
+    left: 10px;
+    margin: 0 auto;
+}
+
+.someContent {
+    /* width: 30px; */
+    height: 108px;
+    /* position: absolute; */
+    margin-top: 35px;
+    max-width: 320px;
+    line-height: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+button {
+    color: white;
+    background: black;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 9pt;
+    outline: none;
+    margin-top: 60px;
+    width: 39%;
+    height: 50px;
+    font-family: 'Space Mono', monospace;
+}
+
+button:hover {
+    box-shadow: 1px 1px 1px rebeccapurple;
+}
+
+@media only screen and (max-width:550px) {
+    .Container {
+        width: 100%;
+    }
+    .wrapper {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+    }
+    .page-error {
+        margin-left: 3px;
+        margin-top: -25px;
+    }
+    h1 {
+        font-size: 1em;
+    }
+    .largeText span {
+        font-size: 1.5em;
+    }
+}

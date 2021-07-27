@@ -100,7 +100,7 @@ button {
     font-weight: bold;
     font-size: 9pt;
     outline: none;
-    margin-top: 60px;
+    margin: 0;
     width: 39%;
     height: 50px;
     font-family: 'Space Mono', monospace;
